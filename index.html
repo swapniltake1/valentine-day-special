@@ -128,20 +128,18 @@
       </div>
     </div>
     <script>
-      // Function to play audio after a specific time (in milliseconds)
+   
       function playAudioAfterDelay(delay) {
           setTimeout(function() {
               var audio = document.getElementById("audio");
-              audio.muted = false; // Unmute the audio
+              audio.muted = false;
               audio.play().catch(function(error) {
-                  // Handle error, if any
                   console.error("Error playing audio:", error);
               });
           }, delay);
       }
 
-      // Call the function to play audio after 30 seconds (30000 milliseconds)
-      playAudioAfterDelay(32000); // Adjust the delay as needed
+      playAudioAfterDelay(32000); 
   </script>
     
   </body>
