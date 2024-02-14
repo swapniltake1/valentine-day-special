@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "run-script-os": "^1.0.2"
+    "run-script-os": "^1.1.6"
   },
   "scripts": {
     "start": "run-script-os",
@@ -28,6 +28,5 @@
   "bugs": {
     "url": "https://github.com/swapniltake1/valentine-day-special/issues"
   },
-  "homepage": "https://github.com/swapniltake1/valentine-day-special/#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/swapniltake1/valentine-day-special/#readme"
 }

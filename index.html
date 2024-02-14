@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Happy Valentine :)</title>
+    <title>Happy Valentine Day :)</title>
     <link
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
     <link rel="stylesheet" href="style/style.css" />
+
+    <style>
+      #audio {
+          display: none;
+      }
+  </style>
+
   </head>
 
   <body>
@@ -22,7 +29,7 @@
         <p class="two" id="greetingText">I really like your name btw!</p>
       </div>
       <div class="three">
-        <p>It's Valentine!!! :D</p>
+        <p>It's a Valentine day today</p>
       </div>
       <div class="four">
         <div class="text-box">
@@ -39,7 +46,7 @@
           I realised, I wanted to do something <strong>special</strong>.
         </p>
         <p class="idea-4">Because,</p>
-        <p class="idea-5">
+        <p class="idea-5" id="specialText">
           You are Special
           <span>:)</span>
         </p>
@@ -53,45 +60,35 @@
         <div class="wish">
           <h3 class="wish-hbd">Happy Valentine's Day Gorgeous</h3>
           <h5 id="wishText">kuch kuch</h5>
+          <audio id="audio" controls muted autoplay>
+            <source src="./song/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         </div>
       </div>
       <div class="seven">
         <div class="baloons">
           <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
           <img src="img/smiling.svg" />
           <img src="img/heart.svg" />
-          <!-- <img src="img/happy.svg" alt="" /> -->
           <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
+       
           <img src="img/heart.svg" />
           <img src="img/balloon.svg" alt="" />
           <img src="img/music-note.svg" alt="" />
           <img src="img/heart.svg" />
           <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          
           <img src="img/heart.svg" />
           <img src="img/balloon.svg" alt="" />
           <img src="img/heart.svg" />
           <img src="img/heart.svg" />
           <img src="img/music-note.svg" alt="" />
           <img src="img/smiling.svg" />
-         
           <img src="img/happy.svg" alt="" />
           <img src="img/balloon.svg" alt="" />
           <img src="img/heart.svg" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/heart.svg" />
-          
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" /> -->
           <img src="img/smiling.svg" />
-          <!-- <img src="img/heart.svg" /> -->
-          <!-- <img src="img/happy.svg" alt="" /> -->
+        
         </div>
       </div>
       <div class="eight">
@@ -127,10 +124,27 @@
         <p>Okay, now come back and tell me if you liked it.</p>
         <p id="replay">Or click, if you want to watch it again.</p>
         <p class="last-smile">:)</p>
+        <p>https://github.com/swapniltake1/valentine-day-special </p>
       </div>
     </div>
-  </body>
+    <script>
+      // Function to play audio after a specific time (in milliseconds)
+      function playAudioAfterDelay(delay) {
+          setTimeout(function() {
+              var audio = document.getElementById("audio");
+              audio.muted = false; // Unmute the audio
+              audio.play().catch(function(error) {
+                  // Handle error, if any
+                  console.error("Error playing audio:", error);
+              });
+          }, delay);
+      }
 
+      // Call the function to play audio after 30 seconds (30000 milliseconds)
+      playAudioAfterDelay(32000); // Adjust the delay as needed
+  </script>
+    
+  </body>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script type="text/babel" src="script/main.js"></script>
