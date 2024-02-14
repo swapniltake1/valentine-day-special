@@ -22,8 +22,11 @@ Enjoy the Valentine's Day Special with your loved ones!
 
 ## Customize
 Feel free to customize the content to suit your preferences:
+
 Greeting: Modify the greeting message in index.html.
+
 Song: Replace the existing song (song.mp3) with your preferred romantic track.
+
 Images: Add or replace images in the img directory to personalize the experience.
 
 
