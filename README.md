@@ -58,7 +58,7 @@ Edit `customize.json`:
 
 ```json
 {
-  "name": "Your Name",
+  "name": "Hidaah",
   "greetingText": "I really like your name btw!",
   "wishText": "Your custom message here",
   "imagePath": "img/vector.jpg"
